@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="mx-auto d-inline-block d-flex justify-content-center align-items-center">
+    <%@random_array.each do |item|%>
+      <div class="bg-primary p-3 m-5 d-inline-block fs-3"><%= item%></div>
+    <%end%>
+  </div>
+  <div class="d-flex justify-content-center align-items-center">
+    <form action="/score" method="get">
+    <label for="word"> Choose a Word</label><br>
+    <input type="text" name="word" id="word">
+    <input type="submit" value="submit">
+    </form>
+  </div>
+</div>
